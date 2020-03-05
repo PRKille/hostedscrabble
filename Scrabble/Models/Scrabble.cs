@@ -5,14 +5,20 @@ namespace Scrabble.Models
     public string Word { get; set; }
     public int Score { get; set; }
 
-    public void WordCalc(string word, int score)
+    public void WordCalc(string word)
     {
       Word = word;
-      Score = 0;
     }
     public int TallyLetters(string word)
     {
-      return 0;
+      int score = 0;
+      char[] wordArr = word.ToCharArray();
+      for (int i=0; i < wordArr.Length; i++)
+      if (wordArr[i] == 't')
+      {
+        score ++;
+      }
+      return score;
     }
   }
   

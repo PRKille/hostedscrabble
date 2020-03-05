@@ -12,7 +12,7 @@ namespace Scrabble.Tests
       // Arrange
       Game newGame = new Game();
       // Act
-      newGame.WordCalc("test", 0);
+      newGame.WordCalc("test");
       // Assert
       Assert.AreEqual(typeof(Game), newGame.GetType());
     }
@@ -23,9 +23,9 @@ namespace Scrabble.Tests
       // Arrange
       Game newGame = new Game();
       // Act
-      int result = newGame.TallyLetters("A");
+      int result = newGame.TallyLetters("test");
       // 
-      Assert.AreEqual(1, result);
+      Assert.AreEqual(2, result);
     }
   }
 }
