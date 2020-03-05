@@ -7,10 +7,14 @@ namespace Scrabble.Tests
   public class GameTests
   {
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void WordCalc_CreateNewInstance_NewInstance()
     {
-    // any necessary logic to prep for test; instantiating new classes, etc.
-    Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
+      // Arrange
+      Game newGame = new Game();
+      // Act
+      newGame.WordCalc("test", 0);
+      // Assert
+      Assert.AreEqual(typeof(Game), newGame.GetType());
     }
   }
 }

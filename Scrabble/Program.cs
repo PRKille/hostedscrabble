@@ -1,8 +1,8 @@
-using ProjectName.Models;
+using Scrabble.Models;
 using System.Collections.Generic;
 using System;
 
-namespace ProjectName
+namespace Scrabble
 {
   public class Program
   {
