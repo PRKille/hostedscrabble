@@ -16,5 +16,16 @@ namespace Scrabble.Tests
       // Assert
       Assert.AreEqual(typeof(Game), newGame.GetType());
     }
+
+    [TestMethod]
+    public void TallyLetters_CalculateScore_1()
+    {
+      // Arrange
+      Game newGame = new Game();
+      // Act
+      int result = newGame.TallyLetters("A");
+      // 
+      Assert.AreEqual(1, result);
+    }
   }
 }

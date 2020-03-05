@@ -10,6 +10,10 @@ namespace Scrabble.Models
       Word = word;
       Score = 0;
     }
+    public int TallyLetters(string word)
+    {
+      return 0;
+    }
   }
   
 }
