@@ -11,6 +11,7 @@ namespace Scrabble.Models
     }
     public int TallyLetters(string word)
     {
+      word = word.ToLower();
       int score = 0;
       char[] wordArr = word.ToCharArray();
       for (int i=0; i < wordArr.Length; i++)
